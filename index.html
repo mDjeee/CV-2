@@ -6,8 +6,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="page">
+        <div class="container">
+            <!--header-->
+            <header>
+                <nav>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#experience" class="nav-link">Epxerience</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#contacts" class="nav-link">Contacts</a>
+                </nav>
+                <a class="rsschool" href="https://rs.school"><img src="https://rs.school/images/rs_school_js.svg" alt="Email"></a>
+            </header>
+            <!--Top side-->
+            <section class="top">
+                <div class="ava"><img src="ava2.jpg" alt="Avatar"></div>
+                <div id="about" class="about">
+                    <p class="name">Islambek</p>
+                    <p class="surname">Seytniyazov</p>
+                    <p class="job">Front-end developer</p>
+                    <hr class="line-about">
+                    <p class="about-me">Hello, my name is Islam, I'm expert in web development.</p>
+                </div>
+            </section>
+            <!--main side-->
+            <main class="main">
+
+                <!--left side-->
+                <div class="left">
+
+                    <!--education-->
+                    <div id="education" class="education">
+                        <h1 class="title-education">Education</h1>
+                        <hr class="line-education">
+                        <p class="education-date">Sep, 2015 - June, 2019</p>
+                        <h5 class="diploma">Bussiness of Oil and Gas</h5>
+                        <p class="university-name">RSU of Oil and Gas named I.M.Gubkin</p>
+                        <ul class="university-courses">
+                            <li>Drilling wells</li>
+                            <li>Gas well operation technologies</li>
+                            <li>Development of gas fields</li>
+                        </ul>
+                    </div>
+
+                    <!--Skills-->
+                    <div id="skills" class="skills">
+                        <h1 class="title-skills">Skills</h1>
+                        <hr class="line-skills">
+                        <ul class="ul-skills">
+                            <li class="li-html"><span>HTML</span></li>
+                            <li class="li-css"><span>CSS</span></li>
+                            <li class="li-js"><span>JS</span></li>
+                            <li class="li-java"><span>Java</span></li>
+                        </ul>
+                        <p class="english">English: B2</p>
+                    </div>
+                </div>
+
+                <!--right side-->
+                <div class="right">
+                    <div id="experience" class="experience">
+                        <h1 class="title-experience">Work Experiences</h1>
+                        <hr class="line-experience">
+                        <!--Work #1-->
+                        <div class="work"> 
+                        <p class="experience-date">Mar, 2020 - Apr, 2021</p>
+                        <p class="position">Lead engineer</p>
+                        <p class="company-name">JSC "Uzbekneftegaz"</p>
+                        <ul class="company-tasks">
+                            <li>Control drilling wells</li>
+                            <li>Control operation mode of gas wells</li>
+                            <li>Preparation of a geological report of the entire field</li>
+                        </ul>
+                        </div>
+                        
+                        <!--Work #2-->
+                        <div class="work"> 
+                            <p class="experience-date">Sep, 2019 - Jan, 2020</p>
+                            <p class="position">Math teacher</p>
+                            <p class="company-name">Public school #43 in Tashkent</p>
+                            <ul class="company-tasks">
+                                <li>Teach maths to students</li>
+                                <li>Control progress of students</li>
+                                <li>Preparation of a report about students' marks</li>
+                            </ul>
+                            </div>
+                    </div>
+                    <div class="code">
+                        <h1>Code</h1>
+                        <code>function otherAngle(a, b) {
+                            return 180 - a - b;
+                          }</code>
+                    </div>
+                </div>
+            </main>
+
+            <!--footer-->
+            <footer>
+
+                <!--contacts-->
+                <ul id="contacts" class="ul-contacts">
+                    <li class="li-contacts"><a href="https://github.com/mDjeee"><img src="github.svg" alt="github"></a></li>
+                    <li class="li-contacts"><a href="https://t.me/isejtniyazov"><img src="telegram.svg" alt="telegram"></a></li>
+                    <li class="li-contacts"><a href="http://instagram.com/isejtniyazov"><img src="instagram.svg" alt="instagram"></a></li>
+                    <li class="li-contacts"><a href="https://www.linkedin.com/in/islambek-seytniyazov-9b563b1b5/"><img src="linkedin.svg" alt="linkedin"></a></li>
+                    <li class="li-contacts"><a href="mailto:isejtniyazov@mail.ru"><img src="ui-email.svg" alt="Email"></a></li>
+                    
+                </ul>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>

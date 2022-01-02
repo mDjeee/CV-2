@@ -1,1 +1,341 @@
- 
+* {
+    box-sizing: border-box;
+}
+/*colors*/
+:root {
+    --back-color: #000000;
+    --main-font-color: #f6f6f6;
+    --title-font-color: #545454;
+    --description-color: #b4b4b3;
+    --font-color: #ffffff;
+}
+body {
+    margin: 0;
+}
+.page {
+    width: 980px;
+    background-color: 333;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgb(196,196,196), -30px 0px 40px rgb(196,196,196);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*Header side*/
+header {
+    flex: 1;
+    display: flex;
+}
+nav {
+    display: flex;
+    margin: auto;
+}
+.nav-link {
+    padding: 0 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--back-color);
+}
+.rsschool img{
+    width: 100px;
+    padding-right: 0;
+}
+.rsschool {
+    animation-name: spin;
+    animation-duration: 6000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes spin {
+    50% {
+        transform: translate(-100px);
+    }
+}
+
+.top {
+    display: flex;
+    border-top: 2px solid var(--back-color);
+}
+/*Avatar*/
+.ava {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.about {
+    flex: 60%;
+    padding-left: 20px;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.ava img {
+    width: 320px;
+    padding: 10px;
+    background-color: var(--main-font-color);
+    flex-shrink: 0;
+    position: relative;
+    bottom: -100px;
+}
+/*About*/
+.about {
+    padding-top: 100px;
+    background-color: var(--back-color);
+    padding-left: 36px;
+}
+.name, .surname {
+    color: var(--main-font-color);
+    text-transform: uppercase;
+    font-size: 40px;
+    margin: 0;
+}
+.job {
+    color: var(--main-font-color);
+    font-style: 30px;
+    text-transform: uppercase;
+}
+.about-me {
+    color: var(--font-color);
+    font-weight: 300;
+}
+/*Main side*/
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+/*left side*/
+.left {
+    flex: 40%;
+    padding-left: 36px;
+    padding-top: 100px;
+    background-color: var(--back-color);
+}
+
+/*Education*/
+.title-education {
+    color: var(--main-font-color);
+    text-transform: uppercase;
+}
+.education-date {
+    margin-top: 30px;
+    color: var(--description-color);
+    margin-bottom: 6px;
+}
+.diploma {
+    color: var(--font-color);
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 3px 0;
+}
+.university-name {  
+    color: var(--description-color);
+    margin-top: 0;
+    font-weight: 300;
+}
+.university-courses {
+    color: var(--font-color);
+    font-weight: 300;
+}
+.line-education {
+    height: 5px;
+    background-color: var(--main-font-color);
+}
+
+/*Skills*/
+.title-skills {
+    color: var(--main-font-color);
+    text-transform: uppercase;
+}
+.line-skills {
+    height: 5px;
+    background-color: var(--main-font-color);
+}
+.ul-skills {
+    padding-left: 0;
+    font-weight: 200;
+}
+.ul-skills li {
+    list-style-type: none;
+    color: var(--description-color);
+}
+.ul-skills li {
+    position: relative;
+}
+.li-html span:after {
+    position: absolute;
+    border-radius: 10px;
+    right: 20px;
+    content: "";
+    height: 12px;
+    background-color: var(--description-color);
+    width: 250px;
+    top: 50%;
+}
+.li-css span:after {
+    position: absolute;
+    border-radius: 10px;
+    right: 20px;
+    content: "";
+    height: 12px;
+    background-color: var(--description-color);
+    width: 220px;
+    top: 50%;
+}
+.li-js span:after {
+    position: absolute;
+    border-radius: 10px;
+    right: 20px;
+    content: "";
+    height: 12px;
+    background-color: var(--description-color);
+    width: 200px;
+    top: 50%;
+}
+.li-java span:after {
+    position: absolute;
+    border-radius: 10px;
+    right: 20px;
+    content: "";
+    height: 12px;
+    background-color: var(--description-color);
+    width: 180px;
+    top: 50%;
+}
+.english {
+    color: var(--description-color);
+}
+
+
+/*right side*/
+.right {
+    flex: 60%;
+    border-bottom: 2px solid var(--back-color);
+    background-color: var(--font-color);
+    padding-left: 36px;
+    padding-top: 100px;
+}
+.title-experience {
+    color: var(--title-font-color);
+    text-transform: uppercase;
+    margin: 16px 0;
+}
+.line-experience {
+    height: 5px;
+    background-color: var(--title-font-color);
+}
+.work {
+    margin-bottom: 20px;
+}
+.experience-date {
+    color: var(--description-color);
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.position {
+    color: var(--title-font-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0;
+}
+.company-name {
+    color: var(--title-font-color);
+    font-weight: 300;
+    margin: 0;
+}
+.company-tasks {
+    font-weight: 300;
+    margin: 0;
+}
+/*Code example*/
+.code h1 {
+    margin: 0;
+    color: var(--title-font-color);
+}
+.code code {
+    padding-left: 20px;
+}
+
+
+
+
+
+/* Contacts */
+footer {
+    flex: 1;
+}
+.ul-contacts {
+    display: flex;
+    background-color: var(--font-color);
+}
+footer li {
+    list-style-type: none;
+    display: inline;
+    margin: auto;
+}
+footer li img {
+    width: 30px;
+}
+
+
+@media screen and (max-width: 1020px) {
+    .page{
+        max-width: 720px;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .top {
+        display: flex;
+        flex-direction: row;
+    }
+    .ava {
+        background-color: var(--back-color);
+        flex: 40%;
+    }
+    .ava img {
+        padding: 0 0 0 18px;
+        background-color: #ffffff;
+        bottom: 0;
+        padding: 10px;
+    }
+    .about {
+        flex: 60%;
+        padding-top: 10px;
+    }
+    .right {
+        padding-top: 10px;
+        padding-left: 18px;
+    }
+    .left {
+        display: flex;
+        flex-direction: row;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+    .education {
+        flex: 320px;
+        margin: 0;
+        padding-left: 18px;
+    }
+    .skills {
+        flex: 400px;
+        padding-left: 36px;
+    }
+    .rsschool {
+        animation-duration: 4s;
+    }
+    @keyframes spin {
+        50% {
+            transform: translate(-35px);
+        }
+    }
+  }
